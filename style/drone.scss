@@ -1,0 +1,467 @@
+$Principal-color: #000000;
+$Secundary-color: #f2f2f2;
+$display: flex;
+$horizon:space-between;
+$vertical:center;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.principal-container{
+    width: 100%;
+    height: max-content;
+    .container{
+        width: 100%;
+        height: 100vh;
+        background: $Principal-color;
+        .header{
+            display: $display;
+            justify-content: $horizon ;
+            align-items: $vertical;
+            width: 90%;
+            height: 90px;
+            margin: auto;
+            .container-logo{
+                
+                img{
+                    width: 60px;
+                    height: 60px;
+                    cursor: pointer;
+                    animation: dron 3s infinite;
+             }
+            }
+            .container-socialMedia{
+               i{
+                    font-size: 20px;
+                    margin: 10px;
+                    color: #888888;
+                    cursor: pointer;
+                &:hover{
+                    color: $Secundary-color;
+                }
+               }
+            }
+        }
+        .section{
+            margin-bottom:10px;
+            .content-principal{
+                display: $display;
+                flex-direction: column;
+                justify-content: center;
+                align-self: center;
+                .title{
+                    width: 100%;
+                    height: 120px;
+                    h1{
+                        color: whitesmoke;
+                        font-size: 100px;
+                        text-align: center;
+                        cursor: pointer;
+                        letter-spacing: 10px;
+                    }
+                }
+                .portal{
+                    width: 100%;
+                    height: 200px;
+                    position: relative;
+                    img{
+                        width: 100%;
+                        height: 140px;
+                        position: absolute;
+                        cursor: pointer;
+                        top: 0;
+                        animation: flying 2s ease infinite;
+                    }
+                }
+                .description{
+                    width: 100%;
+                    height: 100px;
+                    text-align: center;
+                    
+                    h2{
+                        color: $Secundary-color;
+                    }
+                    button{
+                            margin: 10px 0;
+                            width: 130px;
+                            height: 45px;
+                            color: $Secundary-color;
+                            background: none;
+                            cursor: pointer;
+                            border-radius: 64px;
+                            border:1px solid whitesmoke;
+                            
+                        a{
+                            text-decoration: none;
+                            font-size: 20px;
+                            color: whitesmoke;
+                            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                            font-weight: 500;
+                        }
+                    }
+                        
+                        
+                }
+            }
+            
+        }
+        
+    }
+    .section2{
+        width: 100%;
+        display: grid;
+        grid-template-areas:  "icon1"
+                              "icon2"
+                              "icon3"
+                              "icon4"
+                              "icon6"
+                              "icon7"
+                              "icon8";
+        grid-auto-rows: 300px;
+        .photo{
+            width:100%;
+            
+        }
+        .photo:nth-child(1){
+            grid-area: icon1;
+            background: url(img/1.jpg);
+            background-size:cover;
+            background-origin: border-box;
+            background-position: center;
+         }
+         .photo:nth-child(2){
+             grid-area: icon2;
+             background:blue; 
+             background: url(img/3.jpg);
+             background-size:cover;
+            background-origin: border-box;
+            background-position: center;
+          }
+          .photo:nth-child(3){
+             grid-area: icon3;
+             background:goldenrod; 
+             background: url(img/2.jpg);
+             background-size:cover;
+            background-origin: border-box;
+            background-position: center;
+          }
+          .photo:nth-child(4){
+             grid-area: icon4;
+             background:url(img/4.jpg); 
+             background-size:cover;
+            background-origin: border-box;
+            background-position: center;
+          } 
+          
+          .photo:nth-child(5){
+             grid-area: icon6;
+             background:url(img/6.jpg); 
+             background-size:cover;
+            background-origin: border-box;
+            background-position: center;
+          }  
+          .photo:nth-child(6){
+             grid-area: icon7;
+             background:url(img/7.jpeg); 
+             background-size:cover;
+            background-origin: border-box;
+            background-position: center;
+          }  
+          .photo:nth-child(7){
+             grid-area: icon8;
+             background:url(img/8.jpg); 
+             background-size:cover;
+            background-origin: border-box;
+            background-position: center;
+          }  
+        
+      }
+      .footer{
+          width: 100%;
+          height: 40px;
+          display: flex;
+          justify-content: center;
+          align-content: center;
+          margin: auto;
+          .footer_container{
+            text-align: center;
+            h2{
+                color: $Principal-color;
+                font-size: 20px;
+                font-weight: 100;
+                cursor: pointer;
+            }
+          }
+      }
+        
+    }
+    .sidebar-right{
+        width: 100%;
+        background: #111;
+        
+
+        .quality{
+            width: 100%;
+            background: #111;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            flex-wrap: wrap;
+            margin: auto;
+            .icon{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                padding: 10px;
+                width: 100%;
+                height: 130px;
+                max-width: 250px;
+                max-height: 200px;
+                margin: 10px;
+                span{
+                    color: #f2f2f2;
+                }
+                img{
+                    width: 64px;
+                    height: 64px;
+                }
+            }
+        }
+    }
+    
+@keyframes flying{
+    0%{
+        top:20%;
+        
+    }
+    50%{
+        top: 40%;
+    }
+    100%{
+        top: 20%;
+        
+    }
+}
+
+//for iphone 5s
+
+@media (max-width:320px){
+    .principal-container{
+        .container{
+            .section{
+                .content-principal{
+                    .portal{
+                        height: 240px;
+                        img{
+                            height: 120px;
+                            animation: iphone5s ease 2s infinite;
+                        }
+                    }
+                    .title{
+                        h1{
+                            font-size: 80px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes iphone5s{
+    0%{
+        top:10%;
+        
+    }
+    50%{
+        top: 30%;
+    }
+    100%{
+        top: 10%;
+        
+    }
+}
+
+@keyframes dron{
+    0%{
+        transform: rotate(-0deg);
+    }
+    50%{
+        transform: rotate(-360deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+//the end for iphone 5s
+
+
+//for big phones
+@media (min-width:321px){
+    .principal-container{
+        .container{
+            .section{
+                .content-principal{
+                    .portal{
+                        height: 340px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width:600px){
+    .principal-container{
+        .container{
+            .section{
+                .content-principal{
+                    .portal{
+                        height: 310px;
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        img{
+                            height: 154px;
+                            width: 50%;
+                        }
+                    }
+                }
+            }
+        }
+        
+        .sidebar-right{
+            .quality{
+                flex-wrap: wrap;
+                flex-direction: initial ;
+            }
+        }
+        .section2{
+            display: grid;
+            width: 100%;
+            grid-gap: 5px;
+            grid-template-areas: "icon1 icon2 "
+                                 "icon4 icon2 "
+                                 "icon8 icon3 "
+                                 "icon6 icon7 ";
+            grid-auto-rows: 300px;
+        }
+        
+    }
+}
+
+
+@media(min-width:1080px){
+    .principal-container{
+        .container{
+            .section{
+                .content-principal{
+                    .portal{
+                        img{
+                            height: 218px;
+                            width: 50%;
+                        }
+                    }
+                }
+            }
+        }
+        .sidebar-right{
+            .quality{
+                
+                .icon{
+                    width: 100%;
+                    max-width: 300px;
+                    margin: 10px 30px;
+                }
+            }
+        }
+        .section2{
+            display: grid;
+            width: 100%;
+            grid-gap: 5px;
+            grid-template-areas: "icon1 icon1 icon2"
+                                 "icon1 icon1 icon2"
+                                 "icon3 icon4 icon2"
+                                 "icon6 icon7 icon8";
+            grid-auto-rows: 300px;
+            .photo{
+                width: 100%;
+            }
+            .photo:nth-child(1){
+               grid-area: icon1;
+               background: url(img/1.jpg);
+               background-size:cover;
+               //background-origin: border-box;
+               background-position:center;
+            }
+            .photo:nth-child(2){
+                grid-area: icon2;
+                background:blue; 
+                background: url(img/3.jpg);
+                background-size:cover;
+               background-origin: border-box;
+               background-position: center;
+             }
+             .photo:nth-child(3){
+                grid-area: icon3;
+                background:goldenrod; 
+                background: url(img/2.jpg);
+                background-size:cover;
+               background-origin: border-box;
+               background-position: center;
+             }
+             .photo:nth-child(4){
+                grid-area: icon4;
+                background:url(img/10.jpg); 
+                background-size:cover;
+               background-origin: border-box;
+               background-position: top;
+             } 
+             
+             .photo:nth-child(5){
+                grid-area: icon6;
+                background:url(img/6.jpg); 
+                background-size:cover;
+               background-origin: border-box;
+               background-position: center;
+             }  
+             .photo:nth-child(6){
+                grid-area: icon7;
+                background:url(img/7.jpeg); 
+                background-size:cover;
+               background-origin: border-box;
+               background-position: center;
+             }  
+             .photo:nth-child(7){
+                grid-area: icon8;
+                background:url(img/8.jpg); 
+                background-size:cover;
+               background-origin: border-box;
+               background-position: top;
+             }  
+            
+        }
+        
+    }
+}
+@media(min-width:1422px){
+    .principal-container{
+        
+        .sidebar-right{
+            .quality{
+                width: 1200px;
+                padding: 64px 0 64px;
+                .icon{
+                    width: 100%;
+                    max-width: 300px;
+                }
+            }
+        }
+    }
+}
+
+//the end for big phones
