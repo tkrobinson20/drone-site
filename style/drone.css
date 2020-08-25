@@ -82,7 +82,7 @@
   font-size: 100px;
   text-align: center;
   cursor: pointer;
-  letter-spacing: 10px;
+ 
 }
 
 .principal-container .container .section .content-principal .portal {
@@ -134,7 +134,13 @@
   width: 100%;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "icon1" "icon2" "icon3" "icon4" "icon6" "icon7" "icon8";
+      grid-template-areas: "icon1"
+ "icon2"
+ "icon3"
+ "icon4"
+ "icon6"
+ "icon7"
+ "icon8";
   grid-auto-rows: 300px;
 }
 
@@ -422,7 +428,10 @@
     display: grid;
     width: 100%;
     grid-gap: 5px;
-        grid-template-areas: "icon1 icon2 " "icon4 icon2 " "icon8 icon3 " "icon6 icon7 ";
+        grid-template-areas: "icon1 icon2 "
+ "icon4 icon2 "
+ "icon8 icon3 "
+ "icon6 icon7 ";
     grid-auto-rows: 300px;
   }
 }
@@ -442,7 +451,10 @@
     display: grid;
     width: 100%;
     grid-gap: 5px;
-        grid-template-areas: "icon1 icon1 icon2" "icon1 icon1 icon2" "icon3 icon4 icon2" "icon6 icon7 icon8";
+        grid-template-areas: "icon1 icon1 icon2"
+ "icon1 icon1 icon2"
+ "icon3 icon4 icon2"
+ "icon6 icon7 icon8";
     grid-auto-rows: 300px;
   }
   .principal-container .section2 .photo {
