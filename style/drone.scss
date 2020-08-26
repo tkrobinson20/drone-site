@@ -24,7 +24,6 @@ $vertical:center;
             height: 90px;
             margin: auto;
             .container-logo{
-                
                 img{
                     width: 60px;
                     height: 60px;
@@ -68,7 +67,6 @@ $vertical:center;
                     position: relative;
                     img{
                         width: 100%;
-                        height: 140px;
                         position: absolute;
                         cursor: pointer;
                         top: 0;
@@ -236,14 +234,14 @@ $vertical:center;
     
 @keyframes flying{
     0%{
-        top:20%;
+        top:15%;
         
     }
     50%{
-        top: 40%;
+        top: 25%;
     }
     100%{
-        top: 20%;
+        top: 15%;
         
     }
 }
@@ -315,7 +313,7 @@ $vertical:center;
         }
     }
 }
-@media (min-width:600px){
+@media (min-width:600px) {
     .principal-container{
         .container{
             .section{
@@ -326,8 +324,8 @@ $vertical:center;
                         display: flex;
                         justify-content: center;
                         img{
-                            height: 154px;
-                            width: 50%;
+                            height: 200px;
+                            width: 98%;
                         }
                     }
                 }
@@ -361,6 +359,10 @@ $vertical:center;
             .section{
                 .content-principal{
                     .portal{
+                        height: 340px;
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
                         img{
                             height: 218px;
                             width: 50%;
@@ -464,4 +466,10 @@ $vertical:center;
     }
 }
 
-//the end for big phones
+@media(min-width:667px) and (max-width:667px){
+    .principal-container{
+        .container{
+            height: auto;
+        }
+    }
+}
