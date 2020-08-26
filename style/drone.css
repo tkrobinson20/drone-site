@@ -537,9 +537,12 @@
   }
 }
 
-@media (min-width: 667px) and (max-width: 667px) {
+@media (min-width: 667px) and (max-width: 668px) {
   .principal-container .container {
     height: auto;
+  }
+  .principal-container .container .section .content-principal .portal img {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=drone.css.map */
