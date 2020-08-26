@@ -475,4 +475,85 @@
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-area: icon1;
+    background: url(img/1.jpg);
+    background-size: cover;
+    background-position: center;
   }
+  .principal-container .section2 .photo:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 3;
+    grid-area: icon2;
+    background: blue;
+    background: url(img/3.jpg);
+    background-size: cover;
+    background-origin: border-box;
+    background-position: center;
+  }
+  .principal-container .section2 .photo:nth-child(3) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: icon3;
+    background: goldenrod;
+    background: url(img/2.jpg);
+    background-size: cover;
+    background-origin: border-box;
+    background-position: center;
+  }
+  .principal-container .section2 .photo:nth-child(4) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    grid-area: icon4;
+    background: url(img/10.jpg);
+    background-size: cover;
+    background-origin: border-box;
+    background-position: top;
+  }
+  .principal-container .section2 .photo:nth-child(5) {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: icon6;
+    background: url(img/6.jpg);
+    background-size: cover;
+    background-origin: border-box;
+    background-position: center;
+  }
+  .principal-container .section2 .photo:nth-child(6) {
+    -ms-grid-row: 4;
+    -ms-grid-column: 2;
+    grid-area: icon7;
+    background: url(img/7.jpeg);
+    background-size: cover;
+    background-origin: border-box;
+    background-position: center;
+  }
+  .principal-container .section2 .photo:nth-child(7) {
+    -ms-grid-row: 4;
+    -ms-grid-column: 3;
+    grid-area: icon8;
+    background: url(img/8.jpg);
+    background-size: cover;
+    background-origin: border-box;
+    background-position: top;
+  }
+}
+
+@media (min-width: 1422px) {
+  .principal-container .sidebar-right .quality {
+    width: 1200px;
+    padding: 64px 0 64px;
+  }
+  .principal-container .sidebar-right .quality .icon {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (min-width: 667px) and (max-width: 668px) {
+  .principal-container .container {
+    height: auto;
+  }
+  .principal-container .container .section .content-principal .portal img {
+    width: 100%;
+  }
+}
