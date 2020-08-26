@@ -93,7 +93,6 @@
 
 .principal-container .container .section .content-principal .portal img {
   width: 100%;
-  height: 140px;
   position: absolute;
   cursor: pointer;
   top: 0;
@@ -298,25 +297,25 @@
 
 @-webkit-keyframes flying {
   0% {
-    top: 20%;
+    top: 15%;
   }
   50% {
-    top: 40%;
+    top: 25%;
   }
   100% {
-    top: 20%;
+    top: 15%;
   }
 }
 
 @keyframes flying {
   0% {
-    top: 20%;
+    top: 15%;
   }
   50% {
-    top: 40%;
+    top: 25%;
   }
   100% {
-    top: 20%;
+    top: 15%;
   }
 }
 
@@ -406,8 +405,8 @@
             justify-content: center;
   }
   .principal-container .container .section .content-principal .portal img {
-    height: 154px;
-    width: 50%;
+    height: 200px;
+    width: 98%;
   }
   .principal-container .sidebar-right .quality {
     -ms-flex-wrap: wrap;
@@ -428,9 +427,19 @@
 }
 
 @media (min-width: 1080px) {
+  .principal-container .container .section .content-principal .portal {
+    height: 340px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .principal-container .container .section .content-principal .portal img {
     height: 218px;
-    width: 50%;
+    width: 70%;
   }
   .principal-container .sidebar-right .quality .icon {
     width: 100%;
@@ -525,6 +534,12 @@
   .principal-container .sidebar-right .quality .icon {
     width: 100%;
     max-width: 300px;
+  }
+}
+
+@media (min-width: 667px) and (max-width: 667px) {
+  .principal-container .container {
+    height: auto;
   }
 }
 /*# sourceMappingURL=drone.css.map */
