@@ -82,7 +82,7 @@
   font-size: 100px;
   text-align: center;
   cursor: pointer;
- 
+  letter-spacing: 10px;
 }
 
 .principal-container .container .section .content-principal .portal {
@@ -93,7 +93,6 @@
 
 .principal-container .container .section .content-principal .portal img {
   width: 100%;
-  height: 140px;
   position: absolute;
   cursor: pointer;
   top: 0;
@@ -304,25 +303,25 @@
 
 @-webkit-keyframes flying {
   0% {
-    top: 20%;
+    top: 15%;
   }
   50% {
-    top: 40%;
+    top: 25%;
   }
   100% {
-    top: 20%;
+    top: 15%;
   }
 }
 
 @keyframes flying {
   0% {
-    top: 20%;
+    top: 15%;
   }
   50% {
-    top: 40%;
+    top: 25%;
   }
   100% {
-    top: 20%;
+    top: 15%;
   }
 }
 
@@ -412,8 +411,8 @@
             justify-content: center;
   }
   .principal-container .container .section .content-principal .portal img {
-    height: 154px;
-    width: 50%;
+    height: 200px;
+    width: 98%;
   }
   .principal-container .sidebar-right .quality {
     -ms-flex-wrap: wrap;
@@ -437,6 +436,16 @@
 }
 
 @media (min-width: 1080px) {
+  .principal-container .container .section .content-principal .portal {
+    height: 340px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .principal-container .container .section .content-principal .portal img {
     height: 218px;
     width: 50%;
@@ -466,77 +475,4 @@
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-area: icon1;
-    background: url(img/1.jpg);
-    background-size: cover;
-    background-position: center;
   }
-  .principal-container .section2 .photo:nth-child(2) {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 3;
-    -ms-grid-column: 3;
-    grid-area: icon2;
-    background: blue;
-    background: url(img/3.jpg);
-    background-size: cover;
-    background-origin: border-box;
-    background-position: center;
-  }
-  .principal-container .section2 .photo:nth-child(3) {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
-    grid-area: icon3;
-    background: goldenrod;
-    background: url(img/2.jpg);
-    background-size: cover;
-    background-origin: border-box;
-    background-position: center;
-  }
-  .principal-container .section2 .photo:nth-child(4) {
-    -ms-grid-row: 3;
-    -ms-grid-column: 2;
-    grid-area: icon4;
-    background: url(img/10.jpg);
-    background-size: cover;
-    background-origin: border-box;
-    background-position: top;
-  }
-  .principal-container .section2 .photo:nth-child(5) {
-    -ms-grid-row: 4;
-    -ms-grid-column: 1;
-    grid-area: icon6;
-    background: url(img/6.jpg);
-    background-size: cover;
-    background-origin: border-box;
-    background-position: center;
-  }
-  .principal-container .section2 .photo:nth-child(6) {
-    -ms-grid-row: 4;
-    -ms-grid-column: 2;
-    grid-area: icon7;
-    background: url(img/7.jpeg);
-    background-size: cover;
-    background-origin: border-box;
-    background-position: center;
-  }
-  .principal-container .section2 .photo:nth-child(7) {
-    -ms-grid-row: 4;
-    -ms-grid-column: 3;
-    grid-area: icon8;
-    background: url(img/8.jpg);
-    background-size: cover;
-    background-origin: border-box;
-    background-position: top;
-  }
-}
-
-@media (min-width: 1422px) {
-  .principal-container .sidebar-right .quality {
-    width: 1200px;
-    padding: 64px 0 64px;
-  }
-  .principal-container .sidebar-right .quality .icon {
-    width: 100%;
-    max-width: 300px;
-  }
-}
-/*# sourceMappingURL=drone.css.map */
